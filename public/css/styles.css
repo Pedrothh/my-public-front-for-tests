@@ -8,7 +8,7 @@ body {
     height: 100vh;
     margin: 0;
     background-color: #f9f9f9;
-    background-image: url('leaves.webp');
+    background-image: url('../assets/leaves.webp');
     background-repeat: repeat;
 }
 

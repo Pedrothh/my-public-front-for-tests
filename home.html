@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="home-container">
+        <h2>Bem-vindo, <span id="username"></span>!</h2>
+        <p>Você fez login com sucesso.</p>
+
+        <!-- Grupo de botões -->
+        <div class="button-group">
+            <button id="changePasswordButton">Alterar Senha</button>
+            <button id="logoutButton">Sair</button>
+        </div>
+
+        <!-- Seção para exibir a lista de usuários -->
+        <h3>Lista de Usuários</h3>
+        <table id="usersTable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome de Usuário</th>
+                    <th>Status</th>
+                    <th>Função</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Os usuários serão inseridos aqui dinamicamente -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="home.js"></script>
+</body>
+</html>

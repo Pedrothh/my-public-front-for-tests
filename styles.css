@@ -1,0 +1,231 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f9f9f9;
+    background-image: url('leaves.webp');
+    background-repeat: repeat;
+}
+
+/* Container da página de login */
+.login-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+}
+
+.login-container .form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.login-container label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.login-container button:hover {
+    background-color: #218838;
+}
+
+.login-container #message {
+    margin-top: 15px;
+    color: red;
+}
+
+/* Container da página inicial */
+.home-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 800px;
+    text-align: center;
+}
+
+.home-container h2 {
+    margin-bottom: 20px;
+}
+
+.home-container p {
+    margin-bottom: 20px;
+}
+
+/* Grupo de botões na página inicial */
+.button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espaçamento entre os botões */
+    margin-bottom: 20px;
+}
+
+.button-group button {
+    width: 100%;
+    padding: 10px;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.button-group button:hover {
+    opacity: 0.9;
+}
+
+#changePasswordButton {
+    background-color: #007bff; /* Cor azul para o botão de alterar senha */
+}
+
+#changePasswordButton:hover {
+    background-color: #0056b3;
+}
+
+#logoutButton {
+    background-color: #dc3545; /* Cor vermelha para o botão de sair */
+}
+
+#logoutButton:hover {
+    background-color: #c82333;
+}
+
+/* Tabela de usuários */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Container da página de alteração de senha */
+.change-password-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.change-password-container h2 {
+    margin-bottom: 20px;
+}
+
+.change-password-container .form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.change-password-container label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.change-password-container input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.change-password-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.change-password-container button:hover {
+    background-color: #218838;
+}
+
+#changePasswordMessage {
+    margin-top: 15px;
+    color: green;
+}
+
+#changePasswordMessage.error {
+    color: red;
+}
+
+.change-password-container a {
+    display: block;
+    margin-top: 15px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.change-password-container a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividade */
+@media (min-width: 768px) {
+    .button-group {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .button-group button {
+        width: auto;
+        padding: 10px 20px;
+    }
+
+    .change-password-container {
+        width: 400px;
+    }
+}

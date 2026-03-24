@@ -1,5 +1,5 @@
-// import { API_URL } from '../config.js';
-const API_URL = 'https://my-public-api-for-tests-production.up.railway.app/api';
+import { API_URL } from '../scripts/config.js';
+// const API_URL = 'https://my-public-api-for-tests-production.up.railway.app/api';
 
 // Verifica se o token está presente no localStorage
 const token = localStorage.getItem('token');

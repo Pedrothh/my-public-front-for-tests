@@ -1,5 +1,4 @@
 import { API_URL } from '../scripts/config.js';
-// const API_URL = 'https://my-public-api-for-tests-production.up.railway.app/api';
 
 document.getElementById('loginForm').addEventListener('submit', function(event) {
     event.preventDefault();
